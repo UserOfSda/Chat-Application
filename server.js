@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const http = require('http').Server(app);
-const io = require('socket.io')(http);
+const https = require('http').Server(app);
+const io = require('socket.io')(https);
 const path = require('path');
 
 //Serve public directory
@@ -24,6 +24,6 @@ io.on('connection', socket => {
 		io.emit('message', message);
 	});
 });
-http.listen(PORT, function() {
+https.listen(PORT, function() {
 	console.log();
 });
