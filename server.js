@@ -26,5 +26,4 @@ io.on('connection', socket => {
 	});
 });
 http.listen(PORT, function() {
-	console.log('server started');
 });
