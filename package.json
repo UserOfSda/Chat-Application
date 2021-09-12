@@ -1,7 +1,7 @@
 {
-  "name": "quick-chat",
+  "name": "chitchat",
   "version": "1.0.0",
-  "description": "The easiest way to get your message across",
+  "description": "The easiest way to stay in touch",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
