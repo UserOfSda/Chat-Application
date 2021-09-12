@@ -1,7 +1,8 @@
+var PORT = process.env.PORT || 3000; // take port from heroku or for loacalhost
 const express = require('express');
 const app = express();
-const https = require('http').Server(app);
-const io = require('socket.io')(https);
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
 const path = require('path');
 
 //Serve public directory
@@ -24,6 +25,6 @@ io.on('connection', socket => {
 		io.emit('message', message);
 	});
 });
-https.listen(PORT, function() {
-	console.log('listen to Port');
+http.listen(PORT, function() {
+	console.log("server started");
 });
