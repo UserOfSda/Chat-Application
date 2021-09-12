@@ -1,3 +1,4 @@
+var PORT = process.env.PORT || 3000; // take port from heroku or for loacalhost
 const express = require('express');
 const app = express();
 const http = require('http').Server(app);
