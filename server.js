@@ -25,5 +25,5 @@ io.on('connection', socket => {
 	});
 });
 https.listen(PORT, function() {
-	console.log();
+	console.log(PORT);
 });
