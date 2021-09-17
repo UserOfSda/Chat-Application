@@ -72,7 +72,7 @@ sendBtn.addEventListener('click', e => {
 
 	const date = new Date();
 	const month = ('0' + date.getMonth()).slice(0, 2);
-	const year = date.getUTCFullYear();
+	const year = date.getFullYear();
 	const day = date.getDate();
 	const dateString = `${day}-${month}-${year}`;
 
