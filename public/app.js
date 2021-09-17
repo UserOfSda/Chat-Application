@@ -71,7 +71,7 @@ sendBtn.addEventListener('click', e => {
 	}
 
 	const date = new Date();
-	const month = ('0' + date.getMonth()).slice(0, 2);
+	const month = ('0' + date.getUTCMonth()).slice(0, 2);
 	const day = date.getDay();
 	const year = date.getFullYear();
 	const dateString = `${day}/${month}/${year}`;
