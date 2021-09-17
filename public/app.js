@@ -74,7 +74,7 @@ sendBtn.addEventListener('click', e => {
 	const month = ('0' + date.getUTCMonth()).slice(0, 2);
 	const day = date.getDay();
 	const year = date.getFullYear();
-	const dateString = `${day}/${month}/${year}`;
+	const dateString = `${month}/${day}/${year}`;
 
 	const message = {
 		author: username,
